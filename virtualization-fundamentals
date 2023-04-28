@@ -1,0 +1,10 @@
+#what is virtulization ?
+>> It is Technique of spliting the physical resources into many logical resources as we want i.e CPU , memory , storage etc.
+
+>>Virtulisation is technique to transform hardware into software
+
+#How is virtulization done ?
+
+Virtulization is done using Hypervisor , Hypervisor is nhtg but software solution provided by diff companies like Vmware , Vsphere , microsoft-HyperV ,
+
+
