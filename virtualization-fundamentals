@@ -8,3 +8,12 @@
 Virtulization is done using Hypervisor , Hypervisor is nhtg but software solution provided by diff companies like Vmware , Vsphere , microsoft-HyperV ,
 
 
+#what is Hypervisor and types of hypervisor
+
+>>Hyperviosr is called as software or firmware , where firmware reside just above the hardware 
+>>Hypervisor are of two types > type one is used at enter prise level called as bare metal where hyper v is place just above the hardware of host
+>type-2 is used for a practice aur demo purpouse witch works on top of host operating system.
+
+
+
+
