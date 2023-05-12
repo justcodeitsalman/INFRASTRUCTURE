@@ -1,0 +1,82 @@
+Dynamodb  (Documnet type or Key Value pair )
+==============================================================================
+Dynamodb is service of unstructured database which is managed by AWS.
+
+1.>>what is sturcture of dynamodb documnet ?
+
+<<Table>>  #collection of data items
+  <<item>> #group pf attribute that is uniquely identifiable among all of the other items.
+      << attributes>> # key value pair
+      
+A table cosisiste of item as beloo
+item 1:
+roll-no:1
+name: salman
+calss : btech
+age: 25
+
+item 2:
+roll-no:2
+name: saklen
+branch: BA
+fav color: black
+
+Note: need to define one primary key
+
+2.what is the aggregate size of amazon dynamodb one item?
+>> it cannnot excide 400kb 
+
+3.what is the way if have to store the data more then 400kb size in item ?
+>> you need to store that data in Amazon s3 and provide the url to one of attribute of item.
+
+4.no fo table can be created for one accout ?
+>> 256 tables can be created per account 
+=================================================
+Dynamodb- Read capacity unit
+a.strongly consistent read  # get you upto date data whcih includes recently commited data as well #latency is observed
+b.eventually consistent read # get you data faster but can't give garranty to provide recent commited data 
+1 RCU = can read 4kb of data
+
+formula to calculate RCU:
+RCU = (item_size / 4 KB) * read_throughput
+25= (100/4)*1
+RCU =total_data/4kb
+max 10,000 RCU
+
+>>1 RCU repesent one strongly consistent read per second and 2 eventually consistent read per sec
+
+for Write capacity unit 
+WCU = (item_size / 1 KB) * write_throughput
+ 50 =100/1*1
+max 10,000 WCU
+
+
+ 
+ ==================================================
+ Dynamo DB pricing 
+ 
+ you pay for 
+ 
+ Provisioned Capacity:
+ DynamoDB offers provisioned capacity mode where you specify the desired Read Capacity Units (RCUs) 
+ and Write Capacity Units (WCUs) to meet your application's performance requirements.
+ You pay for the provisioned capacity regardless of the actual usage. The pricing for provisioned capacity 
+ includes hourly rates based on the number of RCUs and WCUs provisioned.
+ 
+Storage: You are charged for the amount of data stored in DynamoDB,
+including the primary key, attributes, and any secondary indexes. 
+The pricing for storage is based on the average size of your data over a month, calculated in gigabytes (GB).
+
+Data Transfer: DynamoDB charges for data transfer both in and out of the service. 
+This includes data transfer within the same AWS region, data transfer between different AWS regions, and data transfer to the internet.
+
+Additional Features: DynamoDB offers additional features such as Global Tables (for multi-region replication),
+On-Demand Capacity mode (pay per request without specifying provisioned capacity), 
+and DynamoDB Accelerator (DAX) for caching. 
+These features have their own pricing models, so you should review the AWS pricing documentation for specific details.
+ 
+
+
+
+
+
