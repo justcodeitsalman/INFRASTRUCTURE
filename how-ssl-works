@@ -1,0 +1,20 @@
+we have source(A) and Destination(B) to get SSL work between this we have to install/get one certificate/key from authorized(cert-mart) and install on our domain:(DNS)
+
+when we buy a certificate will get three keys/crets
+1.root certificat
+2.intermidiate certificate
+3.end-entity (server certificate)
+
+===============how to configure this in java application level================
+first make the above certificate save as  file_name.pem 
+
+now you need to import this certificate to truststore.jks file by using below command 
+keytool -import -alias mycert -file /path/to/certificate.crt -keystore /path/to/truststore.jks
+
+================================================================================================================
+check and validate certs:
+/software/bea/java/jdk1.8.0_162/bin/keytool -v -list -keystore KcimKeystore.jks -storepass kcimlive | grep "Valid from:"
+/software/bea/java/jdk1.8.0_162/bin/keytool -v -list -keystore KcimKeystore.jks -storepass kcimlive | grep "Serial number"
+
+
+
