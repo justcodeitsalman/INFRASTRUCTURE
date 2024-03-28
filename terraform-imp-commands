@@ -29,3 +29,8 @@ debug  >>manage ouputs for debuggiing
 force-unlock >> manually unlock terraform state 
 state  >> advance terraform state 
 
+important areas to cover in terraform.
+dependencies 
+state file management
+
+
