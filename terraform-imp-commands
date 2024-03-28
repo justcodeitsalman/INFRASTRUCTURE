@@ -1,0 +1,31 @@
+terraform init >> intialization of terraform local or remote backend.
+
+======================================================================================================
+? what is terraform back end 
+Configuring a remote backend in Terraform involves modifying your Terraform configuration 
+file (usually named terraform.tf or main.tf) to specify the backend configuration. Here's a step-by-step guide on how to do it:
+=======================================================================================================
+
+terraform plan >> make a deployment plan  for terraform resources
+terraform appply >> Deploy the resources in terraform files
+terraform destroy >> Destroys the resources in terraform file
+terraform console  >> interactive console for terraform syntax
+terraform env >> managing terraform workspace so called env
+terraform fmt  >> finds and rewrite terrafomr files in canonical format
+get  >> download and install terraform module to use it
+graph  >> create visual grap of terraform resources
+import  >> import an exiting infrasturcture  to  terraform
+output  >> read output form state file 
+provider  >> prints tree of terraform provider. 
+push  >> upload terraform module to atlas to run
+refresh >> update loacal terraform file against real resources
+show  >> inspect trraform state file
+taint  >> manually mark resource for recreation
+untaint  >> manually mark resources for tainted
+validate  >> validate resources in terraform file 
+version  >> check version 
+workspace >> manage env 
+debug  >>manage ouputs for debuggiing
+force-unlock >> manually unlock terraform state 
+state  >> advance terraform state 
+
